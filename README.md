@@ -14,11 +14,13 @@ Some prereading, my SRPv6a [slides](https://www.josephkirwin.com/srp-talk/#/setu
 
 If you want to compare something usually you can subtract one from another and if the result is zero they were the same value. So you can construct this via exponents.
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;\frac{v^i}{v^j} = v^{i-j} => v^0 = 1 \ when \ i=j" width="40%"/><br/>
+<!-- https://latex.codecogs.com/svg.latex?\Large&space;\frac{v^i}{v^j} = v^{i-j} => v^0 = 1 \ when \ i=j -->
+<img src="diagrams/img/eq1.svg" width="40%"/><br/>
 
 
 Where v is shorthand for this function    
-<br><img src="https://latex.codecogs.com/svg.latex?\Large&space;v(x) => g^x \mod n" width="30%"/>
+<!-- https://latex.codecogs.com/svg.latex?\Large&space;v(x) => g^x \mod n -->
+<br><img src="diagrams/img/eq2.svg" width="30%"/>
 
 where n is a large prime number, g is a coprime (A base with property [GCD](https://en.wikipedia.org/wiki/Greatest_common_divisor)(g,n) = 1) that has the same power periodicity in n. Visual demo of what I mean on [this slide](https://www.josephkirwin.com/srp-talk/#/4/1) of my srp talk
 
