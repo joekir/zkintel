@@ -1,0 +1,30 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "Threat Intel Sharing Example Schema",
+  "required": [
+    "c2Domain",
+    "registryKey"
+  ],
+  "properties": {
+    "c2Domain": {
+      "$id": "#/properties/c2Domain",
+      "type": "string",
+      "examples": [
+        "managehelpdesk[.]com"
+      ],
+      "pattern": "^[^(?:\\]|\\s)]*\\[\\.\\][^(?:.|\\s)]*$"
+    },
+    "registryKey": {
+      "$id": "#/properties/registryKey",
+      "type": "string",
+      "title": "The Registrykey Schema",
+      "examples": [
+        "HKCU\\Software\\Microsoft\\CurrentVersion\\Run"
+      ],
+      "pattern": "^(?:\\w*?)(?:\\\\\\w*?)+$"
+    }
+  }
+}

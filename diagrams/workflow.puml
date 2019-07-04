@@ -1,0 +1,13 @@
+@startuml
+autonumber
+
+entity pA as "Party A"
+entity pB as "Party B"
+
+pA -> pB: json-schema, v, n, modhash
+pB -> pB: decides if they agree with the schema
+pB -> pB: validates
+pB -> pA: their modhash
+pA -> pA: validates
+
+@enduml
